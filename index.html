@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTOFOLIO ME</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Opening Screen - FULL LOCKED -->
+    <div class="opening-screen" id="openingScreen">
+        <div class="opening-bg"></div>
+        <div class="opening-container">
+            <div class="opening-left">
+                <div class="opening-photo">
+                    <img src="img/foto2.jpeg" alt="Profile Photo">
+                    <div class="photo-ring"></div>
+                </div>
+            </div>
+            <div class="opening-right">
+                <div class="opening-logo">
+                    <h1 class="opening-title">PORTOFOLIO ME</h1>
+                    <div class="title-underline"></div>
+                </div>
+                <button class="btn-open" id="btnOpen">
+                    <span class="btn-text">OPEN</span>
+                    <span class="btn-icon"><i class="fas fa-chevron-right"></i></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Portfolio Content (Hidden Awal, Tidak Bisa Discroll) -->
+    <div class="main-wrapper" id="mainWrapper">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>PORTOFOLIO ME</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#visi-misi">Visi & Misi</a></li>
+                    <li><a href="#favorit">Favorit</a></li>
+                    <li><a href="#sertifikat">Sertifikat</a></li>
+                    <li><a href="#magang">Magang</a></li>
+                    <li><a href="#pengalaman">Pengalaman</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#penutup">Penutup</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to My Portfolio</h1>
+                <p class="hero-subtitle">IT Programmer | Web Developer | UI/UX Desainer</p>
+            </div>
+        </section>
+
+        <!-- About Me (DENGAN FOTO) -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Halo! Perkenalkan nama saya Prawira Sebastian, seorang kreator digital yang memiliki keahlian di bidang desain grafis dan pengembangan website. Saya menyukai tantangan dalam menciptakan tampilan yang estetis, user-friendly, dan responsif, agar setiap proyek tidak hanya terlihat menarik tetapi juga memberikan pengalaman terbaik bagi pengguna.</p>
+                        <p>Dengan pemahaman mendalam pada HTML, CSS, PHP, MySQL, dan UI/UX Design, saya mampu membangun website yang modern serta sesuai kebutuhan bisnis. Selain itu, saya juga berpengalaman dalam membuat desain visual yang mendukung branding dan komunikasi digital.</p>
+                        <p>Saya juga dapat membuat website di bagian Frontend atau Backend atau juga bisa Fullstack, tapi biasanya saya berfokus ke Frontend untuk tampilan website.</p>
+                        <div class="about-social">
+                            <a href="https://github.com/prawira1510" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/prawira-sebastian-hutagalung-18ba81303" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="https://instagram.com/prawira.s.htg" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="img/foto1.jpeg" alt="Profile Photo">
+                        <div class="about-image-overlay">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visi & Misi -->
+        <section id="visi-misi" class="section alt-bg">
+            <div class="container">
+                <h2 class="section-title">Visi & Misi</h2>
+                <div class="visi-misi-wrapper">
+                    <div class="visi-card">
+                        <div class="card-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Visi</h3>
+                        <p>Menjadi programmer profesional yang mampu menciptakan teknologi solutif dan berdampak positif bagi masyarakat di era digital 4.0. <br>
+                        <br> Menjadi seorang kreator digital yang mampu menciptakan desain dan website yang menarik, fungsional, dan memberikan pengalaman terbaik bagi pengguna, sehingga membantu brand dan bisnis berkembang secara kreatif dan profesional.</p>
+                    </div>
+                    <div class="misi-card">
+                        <div class="card-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Misi</h3>
+                        <ul>
+                            <li>Terus belajar dan mengikuti perkembangan teknologi terbaru</li>
+                            <li>Membangun software yang user-friendly, berkualitas, dan inovatif</li>
+                            <li>Berkontribusi dalam open source dan komunitas programmer</li>
+                            <li>Mengembangkan soft skill untuk teamwork yang efektif</li>
+                            <li>Menciptakan solusi digital yang memudahkan kehidupan masyarakat</li>
+                            <li>Membangun website yang responsif dan mudah digunakan oleh semua pengguna.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Favorit Me -->
+        <section id="favorit" class="section">
+            <div class="container">
+                <h2 class="section-title">Favorit Me</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="img/apk kasir.jpeg" alt="Coding">
+                        <div class="gallery-caption">
+                            <h4>Pengembangan Aplikasi Kasir (POS) berbasis website</h4>
+                            <p>Aplikasi kasir ini saya buat menggunakan Bahasa pemograman HTML, CSS, dan PHP, Serta saya mengkoneksikan ke Databases menggunakan MySQL dari PHPmyadmin</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/undangan-online.jpeg" alt="Team Work">
+                        <div class="gallery-caption">
+                            <h4>Pengembangan Website Undangan Online</h4>
+                            <p>Website undangan online ini saya buat menggunakan bahasa pemograman HTML, CSS , dan JavaScript.</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/PetShop.jpeg" alt="Tech Event">
+                        <div class="gallery-caption">
+                            <h4>Membuat UI/UX Desain Petshop</h4>
+                            <p>Aplikasi desain yang saya buat ini berupa petshop yang bisa terhubung dengan doctor spesialis hewan dan software desain atau alat untuk ngedesain yang saya pakai ini menggunakan Figma.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sertifikat -->
+        <section id="sertifikat" class="section alt-bg">
+            <div class="container">
+                <h2 class="section-title">Sertifikat</h2>
+                <div class="cert-grid">
+                    <div class="cert-card">
+                        <img src="img/sertifikat2.jpeg" alt="Certificate 1">
+                        <div class="cert-info">
+                            <h4>Program Kelas Wirausaha</h4>
+                            <p>30 - Desember - 2023</p>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <img src="img/sertifikat 1.jpeg" alt="Certificate 2">
+                        <div class="cert-info">
+                            <h4>Amplifikasi Pelatihan Nasional Guru Kebangsaan Angkatan I</h4>
+                            <p>Februari - Maret 2024</p>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <img src="img/sertifikat 7.jpeg" alt="Certificate 3">
+                        <div class="cert-info">
+                            <h4>Programmer Raup 2 Digit dari Coding</h4>
+                            <p>06 - Juni - 2023</p>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <img src="img/sertifikat 3.jpeg" alt="Certificate 4">
+                        <div class="cert-info">
+                            <h4>Mastering Self-Leadership</h4>
+                            <p>20 - Juli - 2024</p>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <img src="img/sertifikat4.jpeg" alt="Certificate 5">
+                        <div class="cert-info">
+                            <h4>Mewaspadai Sebaran Konten Hoaks pada Masa PILKADA 2024</h4>
+                            <p>24 - September - 2024</p>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <img src="img/sertifikat6.jpeg" alt="Certificate 6">
+                        <div class="cert-info">
+                            <h4>Majalah Sunday</h4>
+                            <p>Oktober 2024 - Februari 2025</p>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <img src="img/sertifikat 5.jpeg" alt="Certificate 7">
+                        <div class="cert-info">
+                            <h4>Insight On Ngalup (ION) - CyberSecurity</h4>
+                            <p>15 - November - 2024</p>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <img src="img/sertifikat8.jpeg" alt="Certificate 8">
+                        <div class="cert-info">
+                            <h4>Dicoding - Belajar Dasar AI</h4>
+                            <p>01 - Oktober - 2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pengalaman Magang/PKL -->
+        <section id="magang" class="section">
+            <div class="container">
+                <h2 class="section-title">Pengalaman Magang/PKL</h2>
+                
+                <!-- Magang -->
+                <div class="experience-item">
+                    <div class="exp-image">
+                        <img src="img/background majalah sunday.png" alt="Magang majalah sunday">
+                    </div>
+                    <div class="exp-content">
+                        <h3>Team IT Redaksi</h3>
+                        <div class="exp-meta">
+                            <span class="exp-date"><i class="far fa-calendar-alt"></i> 2024 - 2025</span>
+                            <span class="exp-role"><i class="fas fa-briefcase"></i> Majalah Sunday</span>
+                        </div>
+                        <p>Saya memiliki pengalaman bergabung dalam tim redaksi Majalah Sunday sebagai anggota Tim Website, di mana saya bertanggung jawab untuk mengelola, memelihara, dan mengembangkan platform web majalah. Selama periode ini, saya turut berkontribusi dalam membuat tampilan website yang lebih modern, responsif, dan user-friendly agar sesuai dengan kebutuhan pembaca digital. Selain itu, saya juga terlibat dalam pembuatan website baru untuk meningkatkan performa dan menghadirkan pengalaman yang lebih baik bagi audiens.</p>
+                        <div class="exp-tech">
+                            <span>WordPress</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pengalaman Kerja -->
+        <section id="pengalaman" class="section alt-bg">
+            <div class="container">
+                <h2 class="section-title">Pengalaman Kerja</h2>
+                
+                <!-- Kerja -->
+                <div class="experience-item">
+                    <div class="exp-image">
+                        <img src="img/pengalaman kerja.jpeg" alt="IT Programmer">
+                    </div>
+                    <div class="exp-content">
+                        <h3>IT Programmer</h3>
+                        <div class="exp-meta">
+                            <span class="exp-date"><i class="far fa-calendar-alt"></i> 2025 - Sekarang</span>
+                            <span class="exp-role"><i class="fas fa-building"></i> PT Cipta Infra Optima</span>
+                        </div>
+                        <p>Saya memiliki pengalaman bekerja sebagai IT Programmer di PT Cipta Infra Optima, sebuah perusahaan yang bergerak di bidang kontraktor. Dalam peran ini, saya bertanggung jawab untuk mengelola, memelihara, dan mengembangkan sistem serta aplikasi berbasis web yang digunakan untuk mendukung operasional perusahaan.</p>
+                        <p>Selama bekerja, saya berkontribusi dalam merancang dan mengembangkan tampilan website yang lebih modern, responsif, dan user-friendly agar memudahkan penggunaan oleh tim internal. Selain itu, saya juga terlibat dalam pengembangan sistem baru guna meningkatkan efisiensi kerja, performa aplikasi, serta memberikan pengalaman penggunaan yang lebih optimal.</p>
+                        <div class="exp-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECT Section -->
+        <section id="project" class="section">
+            <div class="container">
+                <h2 class="section-title">Project</h2>
+                
+                <!-- Project 1 -->
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="img/webvibesid.jpg" alt="Project 1">
+                        <div class="project-overlay">
+                            <a href="https://webvibesid2026.vercel.app/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Lihat Project
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Website Jasa atau Bisnis</h3>
+                        <p>Website jasa ini biasanya untuk orang-orang yang ingin melakukan jasa atau joki website yang responsive, Dibangun menggunakan HTML, CSS, dan JavaScript Murni serta menggunakan bootstrap untuk lebih responsive lagi</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Bootstrap</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="https://webvibesid2026.vercel.app/" target="_blank" class="project-btn">
+                            <i class="fas fa-external-link-alt"></i> Demo Project
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 (reverse) -->
+                <div class="project-item reverse">
+                    <div class="project-content">
+                        <h3>Website Undangan Online Digital</h3>
+                        <p>Website undangan pernikahan digital dengan fitur RSVP, galeri foto, countdown timer, dan kirim ucapan. Dibangun menggunakan HTML, CSS, dan JavaScript murni.</p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>GSAP</span>
+                        </div>
+                        <a href="https://undangan-online-gilt.vercel.app" target="_blank" class="project-btn">
+                            <i class="fas fa-external-link-alt"></i> Demo Project
+                        </a>
+                    </div>
+                    <div class="project-image">
+                        <img src="img/undangan-online.jpeg" alt="Project 2">
+                        <div class="project-overlay">
+                            <a href="https://undangan-online-gilt.vercel.app" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Lihat Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="img/PetShop.jpeg" alt="Project 3">
+                        <div class="project-overlay">
+                            <a href="https://www.figma.com/proto/oyGLfHwxnY6ll8WOwwFKgz/PetTopia?node-id=0-1&t=FwGI3TRUKjNrLwLx-1" target="_blank" class="project-link">
+                                <i class="fab fa-figma"></i> Lihat Desain
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>UI/UX Desain Petshop</h3>
+                        <p>Desain aplikasi mobile untuk petshop yang terhubung dengan dokter hewan. Memiliki fitur konsultasi online, booking grooming, dan e-commerce produk hewan.</p>
+                        <div class="project-tech">
+                            <span>Figma</span>
+                            <span>UI Design</span>
+                            <span>Prototyping</span>
+                            <span>User Flow</span>
+                        </div>
+                        <a href="https://www.figma.com/proto/oyGLfHwxnY6ll8WOwwFKgz/PetTopia?node-id=0-1&t=FwGI3TRUKjNrLwLx-1" target="_blank" class="project-btn">
+                            <i class="fas fa-external-link-alt"></i> Lihat Desain
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4 (reverse) -->
+                <div class="project-item reverse">
+                    <div class="project-content">
+                        <h3>Website Valentineday</h3>
+                        <p>Pengembangan website untuk Valentineday dengan tampilan modern, responsif, dan user-friendly. cocok untuk mengetahui seberapa cocok untuk ke dua pasangan</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="https://valentineday-kappa.vercel.app/" target="_blank" class="project-btn">
+                            <i class="fas fa-external-link-alt"></i> Lihat Project
+                        </a>
+                    </div>
+                    <div class="project-image">
+                        <img src="img/valentine day.jpeg" alt="Project 4">
+                        <div class="project-overlay">
+                            <a href="https://valentineday-kappa.vercel.app/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Lihat Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section alt-bg">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>prawirasebastian15@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+62-878-2481-5854</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <p>linkedin.com/in/prawira-sebastian</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <p>github.com/prawira1510</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-instagram"></i>
+                            <div>
+                                <h4>Instagram</h4>
+                                <p>@prawira.s.htg</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <input type="text" placeholder="Nama Lengkap" required>
+                        <input type="email" placeholder="Alamat Email" required>
+                        <input type="text" placeholder="Subjek">
+                        <textarea rows="5" placeholder="Tulis pesan Anda di sini..."></textarea>
+                        <button type="submit">Kirim Pesan <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Penutup -->
+        <section id="penutup" class="section closing">
+            <div class="container">
+                <h2 class="section-title text-white">Thank You</h2>
+                <div class="closing-content">
+                    <p>Yth. Bapak/Ibu HRD,</p>
+                    <p>Dengan hormat,</p>
+                    <p>Saya mengucapkan terima kasih yang sebesar-besarnya atas kesempatan dan waktu yang telah Bapak/Ibu luangkan untuk meninjau lamaran saya. Saya merasa sangat antusias untuk dapat berkontribusi di perusahaan Bapak/Ibu dan menjadi bagian dari tim yang profesional.</p>
+                    <p>Sebagai bentuk komitmen dan keseriusan saya, bersama ini saya lampirkan portofolio yang berisi beberapa proyek yang pernah saya kerjakan. Salah satunya adalah pengalaman saya sebagai Tim Redaksi Website di Majalah Sunday, di mana saya berperan dalam pembuatan dan pengembangan website baru.</p>
+                    <p>Portofolio ini saya susun sebagai bukti kemampuan dan pengalaman saya dalam bidang Web Development (terutama PHP, HTML, CSS, dan UI/UX Design), serta sebagai cerminan dedikasi saya terhadap kualitas dan detail pekerjaan.</p>
+                    <p>Saya yakin pengalaman saya dalam membangun website dari nol untuk Majalah Sunday akan memberikan nilai tambah dan manfaat besar bagi perusahaan Bapak/Ibu.</p>
+                    <div class="quote">
+                        <p>"Bunga mawar harum mewangi, <br> 
+                        Indah terlihat di pagi hari. <br>
+                        Saya siap berikan dedikasi, <br>
+                        Untuk perusahaan ini sepenuh hati."</p>
+                        <span>- Prawira Sebastian -</span>
+                    </div>
+                    <p class="signature">~ Portofolio Me ~</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 PORTOFOLIO ME. All rights reserved. | Made with <i class="fas fa-heart"></i> by Prawira Sebastian</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
