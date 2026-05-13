@@ -6,23 +6,18 @@ const body = document.body;
 
 // Tombol OPEN diklik
 openBtn.addEventListener('click', () => {
-    // Animasi button click
     openBtn.style.transform = 'scale(0.95)';
     setTimeout(() => {
         openBtn.style.transform = '';
     }, 150);
     
-    // Sembunyikan opening screen dengan animasi
     openingScreen.classList.add('hide');
     
-    // Tampilkan main content
     setTimeout(() => {
         mainWrapper.classList.add('show');
-        // Aktifkan scroll pada body
         body.classList.add('scroll-enabled');
     }, 400);
     
-    // Trigger scroll reveal setelah konten muncul
     setTimeout(() => {
         revealSections();
         startCardAnimations();
@@ -95,14 +90,12 @@ function updateActiveLink() {
     });
 }
 
-// Hanya jalankan jika main content sudah tampil
 window.addEventListener('scroll', () => {
     if (mainWrapper.classList.contains('show')) {
         updateActiveLink();
     }
 });
 
-// Smooth Scroll untuk nav links
 navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault();
@@ -119,7 +112,7 @@ navLinks.forEach(link => {
     });
 });
 
-// Hamburger Menu untuk responsive
+// Hamburger Menu
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
@@ -130,7 +123,6 @@ if (hamburger) {
     });
 }
 
-// Close mobile menu saat klik link
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         if (hamburger) {
@@ -150,21 +142,21 @@ if (contactForm) {
     });
 }
 
-// Tambahkan style untuk active link
-const style = document.createElement('style');
-style.textContent = `
-    .nav-menu a.active {
-        color: #646cff;
-        font-weight: 600;
-    }
-    
-    .nav-menu a.active::after {
-        width: 100%;
-    }
-`;
-document.head.appendChild(style);
-
-// Preload images (opsional)
 window.addEventListener('load', () => {
     console.log('Portfolio website ready - waiting for OPEN button');
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        if (mainWrapper.classList.contains('show')) {
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+    });
 });
